@@ -14,6 +14,7 @@ try {
 
 	$client = new WC_API_Client( 'http://localhost/wordpress', 'ck_4f50a211bb98b50fce26906e6da1474a4875b7f3', 'cs_63d4d6bd3d6e59156eb38954d4deca13759f304a', $options );
 	$object= get_object_vars($client->products->get());
+	//echo $object['products'][0]->title;
 	echo $object['products'][0]->title;
 	// coupons
 	//print_r( $client->coupons->get() );
